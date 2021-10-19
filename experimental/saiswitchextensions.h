@@ -44,7 +44,7 @@ typedef enum _sai_switch_attr_extensions_t
      * and SAI_ACL_TABLE_ATTR_FIELD_END as well any custom SAI_ACL_TABLE_ATTR_FIELD
      * are allowed. All other field types in sai_acl_table_attr_t are ignored.
      *
-     * @type sai_uint16_t
+     * @type sai_s32_list_t
      * @flags CREATE_ONLY
      */
     SAI_SWITCH_ATTR_EXT_ACL_FIELD_LIST = SAI_SWITCH_ATTR_EXT_START,
