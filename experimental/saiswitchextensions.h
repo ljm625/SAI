@@ -45,7 +45,6 @@ typedef enum _sai_switch_attr_extensions_t
      *
      * @type sai_s32_list_t sai_acl_table_attr_t
      * @flags CREATE_ONLY
-     * @default disabled 
      */
     SAI_SWITCH_ATTR_EXT_ACL_FIELD_LIST = SAI_SWITCH_ATTR_EXT_START,
 
@@ -57,7 +56,7 @@ typedef enum _sai_switch_attr_extensions_t
      * If value is 1, 1 bit ecc error is generated and 2 for 2 bits error.
      * 
      * @type sai_uint16_t
-     * @flags SET_ONLY
+     * @flags CREATE_AND_SET
      */
     SAI_SWITCH_ATTR_EXT_HW_ECC_ERROR_INITIATE,
      
@@ -67,7 +66,7 @@ typedef enum _sai_switch_attr_extensions_t
      * The value is of HASH offset value for ECMP. 
      *
      * @type sai_uint8_t 
-     * @flags SET_AND_GET
+     * @flags CREATE_AND_SET
      * @default 0 
      */
     SAI_SWITCH_ATTR_EXT_ECMP_HASH_OFFSET,
@@ -78,7 +77,7 @@ typedef enum _sai_switch_attr_extensions_t
      * The value is of HASH offset value for LAG. 
      *
      * @type sai_uint8_t 
-     * @flags SET_AND_GET
+     * @flags CREATE_AND_SET
      * @default 0 
      */
     SAI_SWITCH_ATTR_EXT_LAG_HASH_OFFSET,
