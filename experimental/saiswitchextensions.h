@@ -39,7 +39,7 @@ typedef enum _sai_switch_attr_extensions_t
     /**
      * @brief List of ACL Field list
      *
-     * The value is of type sai_s32_list_t where each list member is of type 
+     * The value is of type sai_s32_list_t where each list member is of type
      * sai_acl_table_attr_t. Only fields in the range SAI_ACL_TABLE_ATTR_FIELD_START
      * and SAI_ACL_TABLE_ATTR_FIELD_END as well any custom SAI_ACL_TABLE_ATTR_FIELD
      * are allowed. All other field types in sai_acl_table_attr_t are ignored.
@@ -62,7 +62,7 @@ typedef enum _sai_switch_attr_extensions_t
      * @isvlan false
      */
     SAI_SWITCH_ATTR_EXT_HW_ECC_ERROR_INITIATE,
-     
+
     /**
      * @brief ECMP HASH offset.
      *
