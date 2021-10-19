@@ -46,6 +46,7 @@ typedef enum _sai_switch_attr_extensions_t
      *
      * @type sai_s32_list_t
      * @flags CREATE_ONLY
+     * @isvlan false
      */
     SAI_SWITCH_ATTR_EXT_ACL_FIELD_LIST = SAI_SWITCH_ATTR_EXT_START,
 
