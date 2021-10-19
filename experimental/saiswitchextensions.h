@@ -35,11 +35,58 @@
 typedef enum _sai_switch_attr_extensions_t
 {
     SAI_SWITCH_ATTR_EXTENSIONS_RANGE_START = SAI_SWITCH_ATTR_END,
-    SAI_SWITCH_ATTR_EXT_ACL_FIELD_LIST,
+    /**
+     * @brief List of ACL Field list
+     *
+     * The value is of type sai_s32_list_t where each list member is of type 
+     * sai_acl_table_attr_t. Only fields in the range SAI_ACL_TABLE_ATTR_FIELD_START
+     * and SAI_ACL_TABLE_ATTR_FIELD_END as well any custom SAI_ACL_TABLE_ATTR_FIELD
+     * are allowed. All other field types in sai_acl_table_attr_t are ignored.
+     *
+     * @type sai_s32_list_t sai_acl_table_attr_t
+     * @flags CREATE_ONLY
+     * @default disabled 
+     */
+    SAI_SWITCH_ATTR_EXT_ACL_FIELD_LIST = SAI_SWITCH_ATTR_EXT_START,
+
+    /**
+     * @brief Inject ECC error. 
+     * 
+     * When this value is set, ECC error initiate register will be set in HW. 
+     * As a result, ECC error will be generated. This feature is for testing and debug purpose.
+     * If value is 1, 1 bit ecc error is generated and 2 for 2 bits error.
+     * 
+     * @type sai_uint16_t
+     * @flags SET_ONLY
+     */
     SAI_SWITCH_ATTR_EXT_HW_ECC_ERROR_INITIATE,
+     
+     /**
+     * @brief ECMP HASH offset. 
+     * 
+     * The value is of HASH offset value for ECMP. 
+     *
+     * @type sai_uint8_t 
+     * @flags SET_AND_GET
+     * @default 0 
+     */
     SAI_SWITCH_ATTR_EXT_ECMP_HASH_OFFSET,
+
+    /**
+     * @brief ECMP HASH offset. 
+     * 
+     * The value is of HASH offset value for LAG. 
+     *
+     * @type sai_uint8_t 
+     * @flags SET_AND_GET
+     * @default 0 
+     */
     SAI_SWITCH_ATTR_EXT_LAG_HASH_OFFSET,
-    SAI_SWITCH_ATTR_EXTENSIONS_RANGE_END
+
+    /**
+     * @brief End of attributes
+     */
+    SAI_SWITCH_ATTR_EXT_END
 
 } sai_switch_attr_extensions_t;
 
