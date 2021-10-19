@@ -53,7 +53,7 @@ typedef enum _sai_switch_attr_extensions_t
      * 
      * When this value is set, ECC error initiate register will be set in HW. 
      * As a result, ECC error will be generated. This feature is for testing and debug purpose.
-     * If value is 1, 1 bit ecc error is generated and 2 for 2 bits error.
+     * If value is 1, 1 bit ECC error is generated and 2 for 2 bits error.
      * 
      * @type sai_uint16_t
      * @flags CREATE_AND_SET

@@ -106,3 +106,4 @@ WWW - World Wide Web
 XG - (*,G) Any-source Multicast
 XOFF - Transmitter Off
 XON - Transmitter On
+ECC - Error Checking and Correcting
