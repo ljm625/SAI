@@ -59,6 +59,7 @@ typedef enum _sai_switch_attr_extensions_t
      *
      * @type sai_uint16_t
      * @flags CREATE_AND_SET
+     * @isvlan false
      */
     SAI_SWITCH_ATTR_EXT_HW_ECC_ERROR_INITIATE,
      
