@@ -48,7 +48,7 @@ typedef enum _sai_switch_attr_extensions_t
      * @flags CREATE_ONLY
      * @isvlan false
      */
-    SAI_SWITCH_ATTR_EXT_ACL_FIELD_LIST = SAI_SWITCH_ATTR_CUSTOM_RANGE_START,
+    SAI_SWITCH_ATTR_EXT_ACL_FIELD_LIST = SAI_SWITCH_ATTR_CUSTOM_RANGE_START + 0x1000,
 
     /**
      * @brief Inject ECC error.
