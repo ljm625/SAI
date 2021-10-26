@@ -2849,10 +2849,10 @@ void check_object_infos()
                 {
                     /* flags, ok */
                 }
-                // else
-                // {
-                //     META_MD_ASSERT_FAIL(am, "attr id is not increasing by 1: prev %d, curr %d", last, am->attrid);
-                // }
+                else
+                {
+                    // META_MD_ASSERT_FAIL(am, "attr id is not increasing by 1: prev %d, curr %d", last, am->attrid);
+                }
             }
 
             if (am->isextensionattr)
